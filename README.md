@@ -26,4 +26,4 @@
 
 > If you get an `IndexError`, it's because your rules are not compatible with each other. For example, you set the rule `N!N` (nasals can't follow nasals), but your syllable structure is `CVNC`. and nasals are included as all consonants.
 
-"# Syllable-Generator" 
+## \*Just download the source code, there is no release 
