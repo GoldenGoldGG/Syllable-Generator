@@ -1,39 +1,10 @@
 from random import Random
 from secrets import choice
 
-# ---------------------------------------------------------------
-#            ~~ Syllable Generator for Conlangs ~~
-#                       by Golden Gold
-#
-# If you get an IndexError, it's because your rules are stupid
-# (for example, nasals can't come after nasals, but you allowed
-# every consonant to come before nasals (CN), which includes
-# nasals.
-#
-# 
-# • Consonant groups can be created in the 'groups.txt' file.
-#   - GroupName: letters divided with ',' (spaces do not matter).
-#   - Divide groups with new line.
-# • Rules can be created in the 'rules.txt' file:
-#   - "A~B": group 'B' must appear after group 'A'.
-#   - "A!B": group 'B' cannot appear after group 'A'.
-#   - Divide rules with new line.
-# 
-# Options:
-# • Syllable structure: 
-#   - '*' before group name means it is mandatory.
-#   - Divide groups with ',' (spaces do not matter).
-# • 'syllables': amount of syllables to create.
-# • 'display': how to display the syllables in the console:
-#   - '{index}': the syllable's index.
-#   - '{syllable}':  the syllable itself.
-#   - '\n': new line.
-# ---------------------------------------------------------------
 
 def options(option):
     opt = open(r'options.txt', mode='r', encoding='utf-8').read()
     return opt[int(opt.find(f'{option}: ') + len(f'{option}: ')):int(opt.find('\n', opt.find(f'{option}: ')))]
-
 
 
 words = int(options('syllables'))
@@ -91,4 +62,4 @@ for i in range(words):
 
     print(options('display').replace("'", '').replace('{index}', f'{i+1}').replace('{syllable}', f'{output}').replace('\\n', '\n'), end='')
 
-print('Program has ended.')
+input('Program has ended.')
