@@ -1,0 +1,6 @@
+C: m, n, ŋ, p, b, t, d, k, g, tɬ, dɮ, ɸ, β, ɬ, ɮ, ʍ, h, r̥, r, l, j
+V: i, ɪ, æ, u, ɒ, i:, ɪ:, æ:, u:, ɒ:
+P: p, b, t, d, k, g
+T: r̥, r
+N: m, n, ŋ
+M: p, b, t, d, k, g, tɬ, dɮ, ɸ, β, ɬ, ɮ, ʍ, h, r̥, r, l, j

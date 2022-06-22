@@ -1,0 +1,3 @@
+structure: C,C,*C,*C,*V,C,*M,*N,*M,T
+syllables: 25
+display: '{index}) {syllable}\n'
